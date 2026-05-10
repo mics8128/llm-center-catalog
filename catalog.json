@@ -1,0 +1,29 @@
+{
+  "version": "2026-05-10",
+  "source_label": "llm-center online catalog seed",
+  "source_url": "https://github.com/mics8128/llm-center-catalog",
+  "entries": [
+    {
+      "provider_kind": "openai_official",
+      "upstream_model_pattern": "gpt-image-2*",
+      "endpoint_type": "image",
+      "prompt_token_cost_micros_per_million": 5000000,
+      "completion_token_cost_micros_per_million": 30000000,
+      "source_url": "https://openai.com/api/pricing/",
+      "source_label": "OpenAI official pricing: GPT-Image-2",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "cliproxyapi",
+      "upstream_model_pattern": "gpt-image-2*",
+      "endpoint_type": "image",
+      "prompt_token_cost_micros_per_million": 5000000,
+      "completion_token_cost_micros_per_million": 30000000,
+      "source_url": "https://github.com/mics8128/llm-center-catalog",
+      "source_label": "CLIProxy live-probed 2026-05-10; pricing references OpenAI GPT-Image-2",
+      "priority": 100,
+      "enabled": true
+    }
+  ]
+}
