@@ -1,11 +1,11 @@
 {
-  "version": "2026-05-10.3",
+  "version": "2026-05-10.4",
   "source_label": "llm-center online catalog seed",
   "source_url": "https://github.com/mics8128/llm-center-catalog",
   "provider_sync_defaults": {
     "openai_official": {
       "include": "gpt-5.5*\ngpt-5.4*\ngpt-5*\no4-mini*\ngpt-image-2*\ntext-embedding-3-small*\ntext-embedding-3-large*\ngpt-4o-transcribe*\ngpt-4o-mini-transcribe*\ngpt-4o-mini-tts*",
-      "exclude": "babbage-???\ndavinci-???\ngpt-4.1*\ngpt-4o*\ngpt-3.5-*\no3*\n*-instruct-*\nft:*\ncomputer-use-preview*\nomni-moderation-*\ntext-moderation-*\n*-realtime-*\ngpt-realtime*\nrealtime-*\ntts-1*\nwhisper-1*"
+      "exclude": "babbage-???\ndavinci-???\ngpt-4.1*\ngpt-4o\ngpt-4o-mini\ngpt-4o-20*\ngpt-4o-mini-20*\ngpt-3.5-*\no3*\n*-instruct-*\nft:*\ncomputer-use-preview*\nomni-moderation-*\ntext-moderation-*\n*-realtime-*\ngpt-realtime*\nrealtime-*\ntts-1*\nwhisper-1*"
     },
     "gemini": {
       "include": "models/gemini-3*\nmodels/gemini-embedding-001",
