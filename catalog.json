@@ -1,5 +1,5 @@
 {
-  "version": "2026-05-10.4",
+  "version": "2026-06-21.1",
   "source_label": "llm-center online catalog seed",
   "source_url": "https://github.com/mics8128/llm-center-catalog",
   "provider_sync_defaults": {
@@ -350,6 +350,94 @@
       "completion_token_cost_micros_per_million": 30000000,
       "source_url": "https://github.com/mics8128/llm-center-catalog",
       "source_label": "CLIProxy live-probed 2026-05-10; pricing references OpenAI GPT-Image-2",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "deepseek-ai/deepseek-v4-flash*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 140000,
+      "completion_token_cost_micros_per_million": 280000,
+      "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "source_label": "DeepSeek official pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "deepseek-ai/deepseek-v4-pro*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 435000,
+      "completion_token_cost_micros_per_million": 870000,
+      "source_url": "https://api-docs.deepseek.com/quick_start/pricing",
+      "source_label": "DeepSeek official pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "z-ai/glm-5.1*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 1400000,
+      "completion_token_cost_micros_per_million": 4400000,
+      "source_url": "https://docs.z.ai/guides/overview/pricing",
+      "source_label": "z.ai (GLM) official pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "moonshotai/kimi-k2.6*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 950000,
+      "completion_token_cost_micros_per_million": 4000000,
+      "source_url": "https://platform.moonshot.ai/docs/pricing/chat",
+      "source_label": "Moonshot (Kimi) official pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "openai/gpt-oss-120b*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 150000,
+      "completion_token_cost_micros_per_million": 600000,
+      "source_url": "https://groq.com/pricing",
+      "source_label": "Groq open-weight list pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "openai_compatible",
+      "upstream_model_pattern": "qwen/qwen3-next-80b-a3b-instruct*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 150000,
+      "completion_token_cost_micros_per_million": 1200000,
+      "source_url": "https://www.alibabacloud.com/help/en/model-studio/models",
+      "source_label": "Alibaba DashScope Intl pricing",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "cliproxyapi",
+      "upstream_model_pattern": "gpt-5.5*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 5000000,
+      "completion_token_cost_micros_per_million": 30000000,
+      "source_url": "https://openai.com/api/pricing/",
+      "source_label": "OpenAI official list (charged at list)",
+      "priority": 100,
+      "enabled": true
+    },
+    {
+      "provider_kind": "cliproxyapi",
+      "upstream_model_pattern": "gpt-5.4-mini*",
+      "endpoint_type": "chat",
+      "prompt_token_cost_micros_per_million": 750000,
+      "completion_token_cost_micros_per_million": 4500000,
+      "source_url": "https://openai.com/api/pricing/",
+      "source_label": "OpenAI official list (charged at list)",
       "priority": 100,
       "enabled": true
     }
